@@ -49,7 +49,7 @@ function InputForm(props: { handleClose: () => void; }) {
         <Grid item xs={12}>  
           <Controller name= "body" control={control} defaultValue="some body text" 
             render={({field}) =>(
-            <TextField {...field} fullWidth multiline label="body" variant="outlined"  error={!!errors.body} helperText={errors.body ? errors.title?.message : ""} />
+            <TextField {...field} fullWidth multiline label="body" variant="outlined"  error={!!errors.body} helperText={errors.body ? errors.body?.message : ""} />
             )}
           />
         </Grid>
